@@ -5,11 +5,11 @@
 @import "fonts"
 
 // Центрирование tmp
-body
-  display: flex
-  align-items: center
-  justify-content: center
-  height: 100vh
+// body
+//   display: flex
+//   align-items: center
+//   justify-content: center
+//   height: 100vh
 
 // Сброс стилей
 h1, h2, h3, h4, h5, h6
@@ -17,7 +17,8 @@ h1, h2, h3, h4, h5, h6
   margin: 0
 
 .partners
-  padding: 80px 40px 120px
+  position: relative
+  padding: 80px 60px 120px
   background-color: #4F8E00
   
 .partners__title
@@ -32,6 +33,15 @@ h1, h2, h3, h4, h5, h6
   grid-template-columns: repeat(3, 1fr)
   gap: 30px
 
+// .partners-block--red
+//   background-color: red
+
+// .partners-block--green
+//   background-color: green
+
+// .partners-block--blue
+//   background-color: blue
+
 .partners__item
   display: flex
   align-items: center
@@ -40,6 +50,32 @@ h1, h2, h3, h4, h5, h6
 .partners__item img
   width: 80%
   opacity: 0.5
+
+.swiper-button-prev
+  position: absolute
+  top: 50%
+  left: 20px
+  transform: translateY(-50%)
+  width: 26px
+  height: 45px
+  z-index: 999
+  background-image: url('../img/svg/arrow-prev.svg')
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+
+.swiper-button-next
+  position: absolute
+  top: 50%
+  right: 20px
+  transform: translateY(-50%) rotate(180deg)
+  width: 26px
+  height: 45px
+  z-index: 1
+  background-image: url('../img/svg/arrow-prev.svg')
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
 
 @media (max-width: 63.99875em)
   .partners

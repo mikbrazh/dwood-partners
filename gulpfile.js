@@ -99,6 +99,7 @@ function buildjs() {
 // Обработка вендорных js
 function buildvendorjs() {
   return src([
+    // ''+config.src+'/vendor/swiper/src/swiper.js',
     ''+config.src+'/vendor/vendor.js', // Сюда добавляем js библиотеки
     ])
     .pipe(concat('vendor.min.js'))
